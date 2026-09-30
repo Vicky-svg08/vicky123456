@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  background-color: #f6f6f4;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --sidebar-width: 224px;
+  --sidebar-collapsed: 64px;
+  --color-brand: #111111;
+  --color-surface: #ffffff;
+  --color-bg: #f6f6f4;
+  --color-border: rgba(0,0,0,0.08);
+  --color-border-hover: rgba(0,0,0,0.15);
+  --color-text: #111111;
+  --color-text-muted: #666666;
+  --color-text-faint: #999999;
+  --color-pending-bg: #FAEEDA;
+  --color-pending-text: #633806;
+  --color-pending-dot: #EF9F27;
+  --color-approved-bg: #EAF3DE;
+  --color-approved-text: #27500A;
+  --color-approved-dot: #639922;
+  --color-rejected-bg: #FCEBEB;
+  --color-rejected-text: #501313;
+  --color-rejected-dot: #E24B4A;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 99px; }
+
+/* Focus ring */
+*:focus-visible { outline: 2px solid #7F77DD; outline-offset: 2px; }
